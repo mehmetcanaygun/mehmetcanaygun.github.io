@@ -41,25 +41,22 @@ body {
   background-color: #b81e1e;
 }
 
-#jumbotron {
+.centered {
   width: 100%;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 100px;
   text-align: center;
+}
+
+#jumbotron {
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
   clear: both;
-}
-
-#jumbo-info-wrapper {
-}
-
-#page-wrapper {
-  width: 100%;
+  background-image: url(../img/bg1.jpg);
 }
 
 #greeting-div {
-  color: green;
+  font-size: 200%;
 }
 
 #bio-avatar {
@@ -80,8 +77,41 @@ body {
 
 #jumbo-info-wrapper {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid green;
   border-radius: 10px;
+}
+
+#get-started-div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  clear: both;
+  background-color: #000;
+}
+
+#get-started-content-wrapper {
+  background-color: rgba(51, 51, 51, 0.2);
+  color: #fff;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+#get-started-content-wrapper:hover {
+  background-color: rgba(51, 51, 51, 0.3);
+  transition: 0.5s;
+}
+
+#get-started-div > #get-started-content-wrapper > button {
+  background-color: #b81e1e;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#get-started-div > #get-started-content-wrapper > button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #b81e1e;
+  transition: 0.3s;
 }
