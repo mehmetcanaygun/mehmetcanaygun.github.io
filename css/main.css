@@ -18,6 +18,7 @@ body {
   width: 100%;
   position: relative;
   clear: both;
+  z-index: 5000;
 }
 
 #navbar > li {
@@ -53,6 +54,7 @@ body {
   position: relative;
   clear: both;
   background-image: url(../img/bg1.jpg);
+  background-repeat: repeat;
 }
 
 #greeting-div {
@@ -81,37 +83,62 @@ body {
 }
 
 #get-started-div {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   position: relative;
   clear: both;
   background-color: #000;
-}
-
-#get-started-content-wrapper {
-  background-color: rgba(51, 51, 51, 0.2);
   color: #fff;
+  border-top: 5px solid #b81e1e;
+  border-bottom: 5px solid #b81e1e;
+}
+
+#get-started-div > p {
   padding: 20px;
-  transition: 0.3s;
+  width: 80%;
 }
 
-#get-started-content-wrapper:hover {
-  background-color: rgba(51, 51, 51, 0.3);
-  transition: 0.5s;
-}
-
-#get-started-div > #get-started-content-wrapper > button {
+#get-started-div > button {
   background-color: #b81e1e;
   font-size: 1.5rem;
   border: 2px solid #fff;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+  transition: 0.3s;
 }
 
-#get-started-div > #get-started-content-wrapper > button:hover {
-  background-color: #000;
+#about-div {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+  clear: both;
+  background-color: #333;
   color: #fff;
-  border: 2px solid #b81e1e;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: repeat;
+  border-bottom: 5px solid #b81e1e;
+}
+
+#about-div > p {
+  padding: 20px;
+  width: 80%;
+}
+
+#about-title {
+  font-size: 6rem;
+}
+
+#about-title > span {
+  color: #b81e1e;
+}
+
+.about-icons {
+  font-size: 400%;
+  transition: 0.3s;
+}
+
+.about-icons:hover {
+  color: #b81e1e;
   transition: 0.3s;
 }
