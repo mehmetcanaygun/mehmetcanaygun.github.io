@@ -13,12 +13,15 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #000;
-  position: fixed;
-  top: 0;
   width: 100%;
-  position: relative;
   clear: both;
   z-index: 5000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 #navbar > li {
@@ -49,10 +52,8 @@ body {
 }
 
 #jumbotron {
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 50px;
-  position: relative;
-  clear: both;
   background-image: url(../img/bg1.jpg);
   background-repeat: repeat;
 }
@@ -85,8 +86,6 @@ body {
 #get-started-div {
   padding-top: 20px;
   padding-bottom: 50px;
-  position: relative;
-  clear: both;
   background-color: #000;
   color: #fff;
   border-top: 5px solid #333;
@@ -117,12 +116,9 @@ body {
 #about-div {
   padding-top: 20px;
   padding-bottom: 50px;
-  position: relative;
-  clear: both;
   background-color: #333;
   color: #fff;
   background-image: url(../img/bg2.jpg);
-  background-repeat: repeat;
   border-bottom: 5px solid #333;
 }
 
@@ -152,8 +148,6 @@ body {
 #work-div {
   padding-top: 70px;
   padding-bottom: 50px;
-  position: relative;
-  clear: both;
   background-image: url(../img/bg3.jpg);
   background-repeat: repeat;
   border-bottom: 5px solid #333;
@@ -193,4 +187,37 @@ body {
 
 #work-list > li > a:hover {
   font-weight: bold;
+}
+
+#contact-div {
+  background-image: url(../img/bg4.jpg);
+  border-top: 1px solid #333;
+  border-bottom: 5px solid #333;
+  padding-bottom: 50px;
+}
+
+#contact-title {
+  font-size: 6rem;
+}
+
+#contact-title > span {
+  color: #b81e1e;
+}
+
+#contact-div > h2 {
+  margin: 50px;
+}
+
+#email-address {
+  width: 400px;
+  border: 3px solid #b81e1e;
+  font-size: 2rem;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+#email-address:hover {
+  border: 5px solid #b81e1e;
+  padding: 10px;
+  transition: 0.3s;
 }
