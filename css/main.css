@@ -45,6 +45,14 @@ body {
   color: #b81e1e;
 }
 
+#menu-btn-li {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 .centered {
   width: 100%;
   margin: 0 auto;
