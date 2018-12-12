@@ -154,7 +154,7 @@ body {
 }
 
 #about-title {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 #about-title > span {
@@ -223,7 +223,7 @@ body {
 }
 
 #contact-title {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 #contact-title > span {
@@ -235,15 +235,12 @@ body {
 }
 
 #email-address {
-  width: 400px;
-  border: 3px solid #b81e1e;
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1rem;
   transition: 0.3s;
 }
 
 #email-address:hover {
-  border: 5px solid #b81e1e;
-  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
   transition: 0.3s;
 }
