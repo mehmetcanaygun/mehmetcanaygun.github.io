@@ -92,7 +92,7 @@ body {
 }
 
 #get-started-div {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background-color: #000;
   color: #fff;
@@ -103,6 +103,24 @@ body {
 #get-started-div > p {
   padding: 20px;
   width: 80%;
+}
+
+#cv-link {
+  background-color: #b81e1e;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+#cv-link:hover {
+  background-color: #000;
+  border-color: #b81e1e;
+  color: #fff;
 }
 
 #get-started-div > button {

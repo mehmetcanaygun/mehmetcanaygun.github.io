@@ -12,7 +12,7 @@ function toggleMenu() {
     menuToggled = false;
     menuBtn.innerHTML = "<i class='fas fa-bars'></i>";
   }
-  
+
   var x = window.matchMedia("(max-width: 600px)");
   myFunction(x);
   x.addListener(myFunction)

@@ -14,14 +14,4 @@
     margin-top: 1rem;
   }
 
-  .show-nav-item {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-
-  .hide-nav-item {
-    display: none;
-  }
-
 }
