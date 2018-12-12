@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahome, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#genreList {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.genreItem {
+  float: left;
+}
+
+.genreItem a {
+  display: block;
+  color: #deec6a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.genreItem a:hover {
+  background-color: #111;
+}
+
+.chosen-genre-item {
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+.chosen-genre-item:hover {
+  background-color: #deec6a;
+}
+
+.trailer-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.trailer-link:hover {
+  font-weight: bold;
+}
+
+#main-title {
+  color: #fff;
+}
+
+#main-title:hover {
+  background-color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#filter-tools-div {
+  width: 100%;
+}
+
+.filter-tool {
+  width: 20rem;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #deec6a;
+  font-size: 1rem;
+}
+
+#random-movie-button {
+  background-color: #deec6a;
+  color: #333;
+  font-weight: bold;
+  width: 6rem;
+}

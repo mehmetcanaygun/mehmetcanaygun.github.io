@@ -1,0 +1,38 @@
+body {
+  background-color: #d6d6d6;
+  color: #000;
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px;
+}
+
+#title {
+  margin: 20px 0;
+}
+
+#userInput {
+  width: 290px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px;
+}
+
+#gramCard {
+  background-color: #da6060;
+}
+
+#poundCard {
+  background-color: #449539;
+}
+
+#ounceCard {
+  background-color: #395593;
+}
