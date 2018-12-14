@@ -35,7 +35,7 @@ var saveGoalBtn = document.getElementById('save-goal-btn').onclick = function() 
 
 var startBtn = document.getElementById('start-btn').onclick = function() {
   isPaused = false;
-  countdown = setInterval(startCountdown, 100);
+  countdown = setInterval(startCountdown, 1000);
 }
 
 function startCountdown() {
