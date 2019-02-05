@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Fun Clock</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Monoton"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center pt-4">
+      <h1 class="display-3">Puppy Clock</h1>
+      <i id="rotating-puppy-icon" class="fas fa-dog fa-3x m-4"></i>
+      <i id="rotating-puppy-icon" class="fas fa-dog fa-3x m-4"></i>
+      <i id="rotating-puppy-icon" class="fas fa-dog fa-3x m-4"></i>
+      <div id="time-wrapper" class="text-center m-4 display-4"></div>
+      <canvas id="my-canvas" width="450" height="360" class="m-4"></canvas>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text font-weight-bold" for="wake-up-time"
+            >Set Wake Up Time</label
+          >
+        </div>
+        <select
+          class="custom-select font-weight-bold text-dark bg-light"
+          id="wake-up-time"
+          onchange="notifyChange();"
+        >
+          <option value="1">01:00 - 02:00</option>
+          <option value="1">02:00 - 03:00</option>
+          <option value="1">03:00 - 04:00</option>
+          <option value="1">04:00 - 05:00</option>
+          <option value="1">05:00 - 06:00</option>
+          <option value="1">06:00 - 07:00</option>
+          <option value="1">07:00 - 08:00</option>
+          <option value="1">08:00 - 09:00</option>
+          <option value="1">09:00 - 10:00</option>
+          <option value="1">10:00 - 11:00</option>
+          <option value="1">11:00 - 12:00</option>
+          <option value="1">12:00 - 13:00</option>
+          <option value="1">13:00 - 14:00</option>
+          <option value="1">14:00 - 15:00</option>
+          <option value="1">15:00 - 16:00</option>
+          <option value="1">16:00 - 17:00</option>
+          <option value="1">17:00 - 18:00</option>
+          <option value="1">18:00 - 19:00</option>
+          <option value="1">19:00 - 20:00</option>
+          <option value="1">20:00 - 21:00</option>
+          <option value="1">21:00 - 22:00</option>
+          <option value="1">22:00 - 23:00</option>
+          <option value="1">23:00 - 00:00</option>
+          <option value="1">00:00 - 01:00</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text font-weight-bold" for="lunch-time"
+            >Set Lunch Time</label
+          >
+        </div>
+        <select
+          class="custom-select font-weight-bold text-dark bg-light"
+          id="lunch-time"
+          onchange="notifyChange();"
+        >
+          <option value="1">01:00 - 02:00</option>
+          <option value="1">02:00 - 03:00</option>
+          <option value="1">03:00 - 04:00</option>
+          <option value="1">04:00 - 05:00</option>
+          <option value="1">05:00 - 06:00</option>
+          <option value="1">06:00 - 07:00</option>
+          <option value="1">07:00 - 08:00</option>
+          <option value="1">08:00 - 09:00</option>
+          <option value="1">09:00 - 10:00</option>
+          <option value="1">10:00 - 11:00</option>
+          <option value="1">11:00 - 12:00</option>
+          <option value="1">12:00 - 13:00</option>
+          <option value="1">13:00 - 14:00</option>
+          <option value="1">14:00 - 15:00</option>
+          <option value="1">15:00 - 16:00</option>
+          <option value="1">16:00 - 17:00</option>
+          <option value="1">17:00 - 18:00</option>
+          <option value="1">18:00 - 19:00</option>
+          <option value="1">19:00 - 20:00</option>
+          <option value="1">20:00 - 21:00</option>
+          <option value="1">21:00 - 22:00</option>
+          <option value="1">22:00 - 23:00</option>
+          <option value="1">23:00 - 00:00</option>
+          <option value="1">00:00 - 01:00</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text font-weight-bold" for="nap-time"
+            >Set Nap Time</label
+          >
+        </div>
+        <select
+          class="custom-select font-weight-bold text-dark bg-light"
+          id="nap-time"
+          onchange="notifyChange();"
+        >
+          <option value="1">01:00 - 02:00</option>
+          <option value="1">02:00 - 03:00</option>
+          <option value="1">03:00 - 04:00</option>
+          <option value="1">04:00 - 05:00</option>
+          <option value="1">05:00 - 06:00</option>
+          <option value="1">06:00 - 07:00</option>
+          <option value="1">07:00 - 08:00</option>
+          <option value="1">08:00 - 09:00</option>
+          <option value="1">09:00 - 10:00</option>
+          <option value="1">10:00 - 11:00</option>
+          <option value="1">11:00 - 12:00</option>
+          <option value="1">12:00 - 13:00</option>
+          <option value="1">13:00 - 14:00</option>
+          <option value="1">14:00 - 15:00</option>
+          <option value="1">15:00 - 16:00</option>
+          <option value="1">16:00 - 17:00</option>
+          <option value="1">17:00 - 18:00</option>
+          <option value="1">18:00 - 19:00</option>
+          <option value="1">19:00 - 20:00</option>
+          <option value="1">20:00 - 21:00</option>
+          <option value="1">21:00 - 22:00</option>
+          <option value="1">22:00 - 23:00</option>
+          <option value="1">23:00 - 00:00</option>
+          <option value="1">00:00 - 01:00</option>
+        </select>
+      </div>
+      <button
+        id="party-btn"
+        type="button"
+        class="btn btn-dark font-weight-bold p-3"
+      >
+        Party!
+      </button>
+      <hr />
+      <p>MCA 2019</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
