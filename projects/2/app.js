@@ -82,11 +82,11 @@ function checkIfEnds(playedUser, playedIndex) {
               xScore++;
               setTimeout(resetGame, 2000);
             } else {
-              console.log("Y WON !!!");
+              console.log("O WON !!!");
               yScore++;
               setTimeout(resetGame, 2000);
             }
-            scoreBoard.innerHTML = `X: ${xScore} | Y: ${yScore}`;
+            scoreBoard.innerHTML = `<strong>X</strong>: ${xScore} | <strong>O</strong>: ${yScore}`;
             isEnded = true;
           }
         }
