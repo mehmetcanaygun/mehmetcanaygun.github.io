@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Contacts</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="container">
+        <li id="site-title">
+          <a href="#">My <span style="color: #fff">Contacts</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="contact-wrapper" class="container"></div>
+    <div id="edit-form" class="container">
+      <h3 style="margin: 0">Edit Contact</h3>
+      <br />
+      <div class="form-group">
+        <label for="edit-id">ID:</label><br />
+        <input id="edit-id" class="edit-input" type="text" value="" disabled />
+      </div>
+      <div class="form-group">
+        <label for="edit-name">Name:</label><br />
+        <input id="edit-name" class="edit-input" type="text" value="" />
+      </div>
+      <div class="form-group">
+        <label for="edit-name">Phone:</label><br />
+        <input id="edit-phone" class="edit-input" type="text" value="" />
+      </div>
+      <div class="form-group">
+        <label for="edit-name">Address:</label><br />
+        <input id="edit-address" class="edit-input" type="text" value="" />
+      </div>
+      <div class="form-group">
+        <label for="edit-name">Birthday:</label><br />
+        <input id="edit-birthday" class="edit-input" type="text" value="" />
+      </div>
+      <div class="form-group">
+        <input id="save-btn" class="btn" type="button" value="Save" />
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Main Script -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.navbar {
+  height: 3rem;
+  line-height: 3rem;
+  background: #338ba1;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#contact-wrapper {
+  margin-top: 20px;
+}
+
+.contact {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.contact:nth-child(odd) {
+  background: #d3d3d3;
+}
+
+.btn {
+  background: #56a79a;
+  color: #fff;
+  width: 5rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 0;
+}
+
+.btn:hover {
+  background: #3b7c71;
+}
+
+#edit-form {
+  display: none;
+  margin-top: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.edit-input {
+  width: 99%;
+  font-size: 1.2rem;
+  padding: 5px 0 5px 2px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+@media (max-width: 890px) {
+  .container {
+    width: 90%;
+  }
+}

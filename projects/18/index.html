@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countdown Timer</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Countdown Timer</h2>
+      <div class="input-group">
+        <input
+          id="event-name"
+          class="cd-input"
+          type="text"
+          placeholder="Event Name"
+        />
+      </div>
+      <div class="input-group">
+        <input id="event-date" class="cd-input" type="date" />
+      </div>
+      <div class="input-group">
+        <input id="event-time" class="cd-input" type="time" value="00:00" />
+      </div>
+      <div class="input-group">
+        <input
+          id="start-btn"
+          class="cd-input btn"
+          type="button"
+          value="Start"
+        />
+      </div>
+      <div id="countdown-box"></div>
+    </div>
+    <!-- Main Script -->
+    <script src="main.js"></script>
+  </body>
+</html>

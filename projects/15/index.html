@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Christmas Lights</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <input type="button" value="PLAY" id="play-btn" class="btn" />
+      </div>
+      <div class="row">
+        <input
+          type="range"
+          id="intensity-range"
+          min="1"
+          max="3"
+          value="1"
+          step="0.5"
+          oninput="changeDuration(this.value)"
+        />
+        <br />
+        <span id="" style="color: #fff"
+          >Intensity change duration:
+          <span id="duration" style="color: #b11616; font-size: 1.5rem">1</span>
+          seconds</span
+        >
+      </div>
+      <div id="circle-row" class="row">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div id="circle-row" class="row">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div id="circle-row" class="row">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- Main Script -->
+    <script src="main.js"></script>
+  </body>
+</html>

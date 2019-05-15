@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color Cycle</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Color Cycle</h2>
+      <div class="input-group">
+        <input
+          id="color-code"
+          type="text"
+          placeholder="Enter color code (e.g. #56a79a)"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          id="increments"
+          type="text"
+          placeholder="Enter increments for R,G,B (e.g. 1,3,2)"
+        />
+      </div>
+      <div class="input-group">
+        <input id="start-stop-btn" type="button" value="Start" />
+      </div>
+      <div id="color-box"></div>
+    </div>
+    <!-- Main Script -->
+    <script src="main.js"></script>
+  </body>
+</html>
