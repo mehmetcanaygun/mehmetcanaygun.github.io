@@ -1,0 +1,21 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.styleChartDiv {
+  display: inline-block;
+  text-align: center;
+}
+
+canvas {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  margin: 0 auto 5px auto;
+  font-size: 1.5rem;
+}
+
+.styleChartDiv {
+  display: inline-block;
+  text-align: center;
+}
+
+canvas {
+  margin: 0 20px 20px 20px;
+}
+
+.color-info {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#col-sown {
+  background: #b9942d;
+}
+#col-fallow {
+  background: #70412e;
+}
+#col-veg {
+  background: #3c6d30;
+}
+#col-fruit {
+  background: #4c3575;
+}

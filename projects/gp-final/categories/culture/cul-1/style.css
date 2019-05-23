@@ -1,0 +1,86 @@
+body {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+svg {
+  background: #000;
+}
+
+#btn-wrapper {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#page-title {
+  color: #fff;
+  font-family: Arial;
+}
+
+.styleInput {
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  transition: 0.3s;
+  margin: 0 10px 10px 0;
+}
+
+.styleInput:hover {
+  background-color: #000;
+  border-color: #a12d2d;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.styleInput:focus {
+  outline: none;
+}
+
+#chart {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.color-info {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#col-icanadolu {
+  background: yellow;
+}
+#col-marmara {
+  background: red;
+}
+#col-karadeniz {
+  background: green;
+}
+#col-akdeniz {
+  background: pink;
+}
+#col-doguanadolu {
+  background: brown;
+}
+#col-ege {
+  background: blue;
+}
+#col-gdoguanadolu {
+  background: orange;
+}
+
+#info-box {
+  color: #fff;
+  position: absolute;
+}

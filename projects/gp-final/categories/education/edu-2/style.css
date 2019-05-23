@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.svg-turkiye-haritasi {
+  max-width: 1140px;
+  margin: 0 0 0 150px;
+  text-align: center;
+}
+.svg-turkiye-haritasi svg {
+  width: 80%;
+  height: auto;
+}
+.il-isimleri {
+  position: absolute;
+  z-index: 2;
+}
+.il-isimleri div {
+  font-family: "Open Sans";
+  display: inline-block;
+  background: #000000;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 16px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#svg-turkiye-haritasi path {
+  cursor: pointer;
+  fill: #bebebe;
+}
+#svg-turkiye-haritasi path:hover {
+  fill: #8b1b1b;
+}
+#guney-kibris {
+  pointer-events: none;
+}
+
+/* 2008 data */
+#svg-turkiye-haritasi path.five {
+  fill: #001227;
+}
+#svg-turkiye-haritasi path.four {
+  fill: #00244d;
+}
+#svg-turkiye-haritasi path.three {
+  fill: #003b7e;
+}
+#svg-turkiye-haritasi path.two {
+  fill: #005ac2;
+}
+#svg-turkiye-haritasi path.one {
+  fill: #0077ff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid white;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  border: 2px solid #4166b6;
+  background: #000;
+  padding: 10px;
+}
+
+#info-box {
+  margin: 10px 0;
+  position: absolute;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  padding: 5px;
+}
+
+#info-box ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 0pt;
+}
+
+#color-scheme {
+  margin-bottom: 20px;
+}
+
+.color-info {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid white;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#col-one {
+  background: #0077ff;
+}
+#col-two {
+  background: #005ac2;
+}
+#col-three {
+  background: #003b7e;
+}
+#col-four {
+  background: #00244d;
+}
+#col-five {
+  background: #001227;
+}

@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+svg {
+  background: #000;
+}
+
+#btn-wrapper {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#page-title {
+  color: #fff;
+  font-family: Arial;
+}
+
+.styleInput {
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  transition: 0.3s;
+  margin: 0 10px 10px 0;
+}
+
+.styleInput:hover {
+  background-color: #000;
+  border-color: #a12d2d;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.styleInput:focus {
+  outline: none;
+}
+
+#chart {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.color-info {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#col-oecdEurope {
+  background: #f44242;
+}
+#col-oecdOther {
+  background: #f4416b;
+}
+#col-otherEuropean {
+  background: #f49741;
+}
+#col-independentStates {
+  background: #f441e2;
+}
+#col-eastAsian {
+  background: #f4f441;
+}
+#col-southeastAsian {
+  background: #7641f4;
+}
+#col-southAsian {
+  background: #6af441;
+}
+#col-westAsian {
+  background: #41a0f4;
+}
+#col-african {
+  background: #41f4a9;
+}
+#col-american {
+  background: #c10d0d;
+}
+#col-ocean {
+  background: #056857;
+}
+
+#info-box {
+  color: #fff;
+  position: absolute;
+}

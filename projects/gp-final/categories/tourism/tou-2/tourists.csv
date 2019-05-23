@@ -1,0 +1,12 @@
+id,pop,region,name,color,totPop
+sa,100,oecdEurope,OECD Countries(Europe),#f44242,13.074.403
+sa,10,oecdOther,OECD Countries(Other),#f4416b,947.283
+sa,40,otherEuropean,Other European Countries,#f49741,4.306.151
+sa,85,independentStates,Com. Of Independent States,#f441e2,11.847.714
+sa,6,eastAsian,East Asian Countries,#f4f441,532.946
+sa,5,southeastAsian,Southeast Asian Countries,#7641f4,403.055
+sa,25,southAsian,South Asian Countries,#6af441,2.347.337
+sa,43,westAsian,West Asian Countries,#41a0f4,4.507.854
+sa,12,african,African Countries,#41f4a9,1.156.667
+sa,2.5,american,American Countries,#c10d0d,286.638
+sa,0.5,ocean,Ocean Countries,#056857,664

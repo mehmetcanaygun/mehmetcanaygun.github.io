@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tourism I</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Which Turkish cities welcomes tourists from which countries?</h1>
+    <div class="row">
+      <div class="column" style="float: left">
+        <canvas id="network" width="600" height="600"></canvas>
+      </div>
+      <div class="column">
+        <div id="countries">
+          <h2>Tourists</h2>
+          <ul>
+            <li style="color: green">German</li>
+            <li style="color: yellow">Russian</li>
+            <li style="color: blue">American</li>
+            <li style="color: skyblue">French</li>
+            <li style="color: red">English</li>
+          </ul>
+        </div>
+        <div id="turkish-cities">
+          <h2>Turkish Cities</h2>
+          <ul>
+            <li style="color: pink">İstanbul</li>
+            <li style="color: pink">İzmir</li>
+            <li style="color: pink">Ankara</li>
+            <li style="color: pink">Trabzon</li>
+          </ul>
+        </div>
+        <!-- <div id="info-box">
+          <h2>Information</h2>
+          <div id="info-detail"></div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

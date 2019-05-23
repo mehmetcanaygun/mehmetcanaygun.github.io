@@ -1,0 +1,100 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #141414;
+  color: #fff;
+}
+
+#numbers {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+#agriculture-card {
+  background: #a56819;
+}
+#education-card {
+  background: #278681;
+}
+#culture-card {
+  background: #862626;
+}
+#sports-card {
+  background: #2f7726;
+}
+#tourism-card {
+  background: #e6ae15;
+}
+
+.card img {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.card img:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.category-body nav {
+  margin-bottom: 20px;
+}
+
+.category-link {
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.category-link:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Agriculture */
+#agriculture-body {
+  background: #a56819;
+}
+
+/* Education */
+#education-body {
+  background: #278681;
+}
+
+/* Culture */
+#culture-body {
+  background: #862626;
+}
+
+/* Sports */
+#sports-body {
+  background: #2f7726;
+}
+
+/* Tourism */
+#tourism-body {
+  background: #e6ae15;
+}

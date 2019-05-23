@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Culture II</title>
+<link rel="stylesheet" href="style.css" />
+<body>
+  <h1>
+    Cinemas, theatres, and libraries in 10 most crowded cities of Turkey - 2016
+  </h1>
+  <div class="container">
+    <div id="dashboard"></div>
+  </div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    var freqData = [
+      {
+        State: "İstanbul",
+        freq: { cinema: 825, theatre: 201, library: 249 }
+      },
+      { State: "Ankara", freq: { cinema: 216, theatre: 58, library: 35 } },
+      { State: "İzmir", freq: { cinema: 135, theatre: 62, library: 42 } },
+      { State: "Bursa", freq: { cinema: 63, theatre: 15, library: 17 } },
+      { State: "Antalya", freq: { cinema: 86, theatre: 12, library: 17 } },
+      { State: "Adana", freq: { cinema: 38, theatre: 15, library: 21 } },
+      { State: "Konya", freq: { cinema: 49, theatre: 13, library: 35 } },
+      {
+        State: "Şanlıurfa",
+        freq: { cinema: 23, theatre: 3, library: 10 }
+      },
+      {
+        State: "Gaziantep",
+        freq: { cinema: 38, theatre: 12, library: 13 }
+      },
+      { State: "Diyarbakır", freq: { cinema: 42, theatre: 6, library: 17 } }
+    ];
+
+    dashboard("#dashboard", freqData);
+  </script>
+</body>

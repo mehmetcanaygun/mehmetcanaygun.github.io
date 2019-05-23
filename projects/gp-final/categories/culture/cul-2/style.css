@@ -1,0 +1,67 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+path {
+  stroke: #fff;
+}
+path:hover {
+  opacity: 0.9;
+}
+rect:hover {
+  fill: #a7a7af;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.legend tr {
+  border-bottom: 1px solid grey;
+}
+.legend tr:first-child {
+  border-top: 1px solid grey;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+.legend {
+  margin-bottom: 76px;
+  display: inline-block;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.legend td {
+  padding: 4px 5px;
+  vertical-align: bottom;
+}
+.legendFreq,
+.legendPerc {
+  align: right;
+  width: 50px;
+}
+
+#dashboard {
+  width: 80%;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 50px auto;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

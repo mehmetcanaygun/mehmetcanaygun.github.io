@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    { "name": "izmir", "color": "pink" },
+    { "name": "istanbul", "color": "pink" },
+    { "name": "ankara", "color": "pink" },
+    { "name": "trabzon", "color": "pink" },
+    { "name": "zonguldak", "color": "pink" },
+    { "name": "rus", "color": "yellow", "ist": "200" },
+    { "name": "ingiliz", "color": "red", "ist": "500" },
+    { "name": "amerikan", "color": "blue", "ist": "300" },
+    { "name": "alman", "color": "green", "ist": "150" },
+    { "name": "fransız", "color": "skyblue", "ist": "750" },
+    { "name": "izmir", "color": "pink" },
+    { "name": "istanbul", "color": "pink" },
+    { "name": "ankara", "color": "pink" },
+    { "name": "trabzon", "color": "pink" },
+    { "name": "zonguldak", "color": "pink" },
+    { "name": "rus", "color": "yellow", "ist": "200" },
+    { "name": "ingiliz", "color": "red", "ist": "500" },
+    { "name": "amerikan", "color": "blue", "ist": "300" },
+    { "name": "alman", "color": "green", "ist": "150" },
+    { "name": "fransız", "color": "skyblue", "ist": "750" }
+  ],
+  "links": [
+    { "source": "rus", "target": "izmir", "count": 1 },
+    { "source": "ingiliz", "target": "izmir", "count": 1 },
+    { "source": "amerikan", "target": "zonguldak", "count": 1 },
+    { "source": "alman", "target": "trabzon", "count": 1 },
+    { "source": "fransız", "target": "ankara", "count": 1 },
+    { "source": "ingiliz", "target": "ankara", "count": 1 },
+    { "source": "rus", "target": "trabzon", "count": 1 },
+    { "source": "alman", "target": "istanbul", "count": 1 }
+  ]
+}

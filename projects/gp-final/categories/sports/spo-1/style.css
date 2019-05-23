@@ -1,0 +1,59 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.page-title {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.color-info {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#col-football {
+  background: #2f9b3e;
+}
+#col-basketball {
+  background: #b86e2a;
+}
+#col-volleyball {
+  background: #3a679b;
+}
+#col-athletism {
+  background: #c4c439;
+}
+#col-tennis {
+  background: #f8b029;
+}
+#col-wrestling {
+  background: #5f5c5c;
+}
+#col-ski {
+  background: #b1b1a4;
+}
+#col-handball {
+  background: #8d4394;
+}
+#col-fitness {
+  background: #a02a2a;
+}
+#col-karate {
+  background: #6a8eb8;
+}

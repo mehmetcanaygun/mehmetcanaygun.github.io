@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tourism I</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 id="page-title">Tourists Visiting Turkey - 2018</h1>
+
+    <div id="color-scheme">
+      <div id="col-oecdEurope" class="color-info">OECD Europe</div>
+      <div id="col-oecdOther" class="color-info">OECD Other</div>
+      <div id="col-otherEuropean" class="color-info">Other European</div>
+      <div id="col-independentStates" class="color-info">
+        Independent States
+      </div>
+      <div id="col-eastAsian" class="color-info">East Asian</div>
+      <div id="col-southeastAsian" class="color-info">Southeast Asian</div>
+      <div id="col-southAsian" class="color-info">South Asian</div>
+      <div id="col-westAsian" class="color-info">West Asian</div>
+      <div id="col-african" class="color-info">African</div>
+      <div id="col-american" class="color-info">American</div>
+      <div id="col-ocean" class="color-info">Ocean</div>
+    </div>
+
+    <div id="btn-wrapper">
+      <button id="split" class="styleInput" type="button" name="split">
+        Countries
+      </button>
+      <button id="combine" class="styleInput" type="button" name="combine">
+        Overall
+      </button>
+    </div>
+
+    <div id="info-box">
+      <h1>
+        <i class="fas fa-globe-europe"></i>
+        Total Tourists In 2018: <span style="color: yellow">39.488.401</span>
+      </h1>
+    </div>
+
+    <div id="chart"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="bubble.js"></script>
+  </body>
+</html>
