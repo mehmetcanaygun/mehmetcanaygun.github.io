@@ -3,16 +3,15 @@ const newTask = document.getElementById("new-task");
 const addTaskBtn = document.getElementById("add-task-btn");
 const filterTasks = document.getElementById("filter-tasks");
 const taskListUl = document.getElementById("task-list-ul");
-const taskListLi = document.getElementsByClassName("list-group-item");
+let taskListLi;
 const clearTasksBtn = document.getElementById("clear-tasks-btn");
 
 // Variables
 let task;
 let tasksArr = [];
+let liArr = [];
 
 displayTasks();
-
-let liArr = Array.from(taskListLi);
 
 // Get new task
 addTaskBtn.onclick = () => {
@@ -23,9 +22,9 @@ addTaskBtn.onclick = () => {
     alert("Task is already in your Task List.");
   } else {
     tasksArr.push(task);
-
     // Add to Local Storage
     localStorage.setItem("tasks", JSON.stringify(tasksArr));
+
     displayTasks();
     newTask.value = "";
   }
@@ -53,6 +52,9 @@ function displayTasks() {
     li.appendChild(a);
     taskListUl.appendChild(li);
   });
+
+  taskListLi = document.getElementsByClassName("list-group-item");
+  liArr = Array.from(taskListLi);
 }
 
 // Delete a Task
