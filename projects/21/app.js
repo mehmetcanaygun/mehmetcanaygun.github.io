@@ -34,7 +34,11 @@ addTaskBtn.onclick = () => {
 // Display Tasks
 function displayTasks() {
   let myTasks = JSON.parse(localStorage.getItem("tasks"));
-  tasksArr = myTasks;
+  if (myTasks === null) {
+    tasksArr = [];
+  } else {
+    tasksArr = myTasks;
+  }
 
   taskListUl.innerHTML = "";
 
