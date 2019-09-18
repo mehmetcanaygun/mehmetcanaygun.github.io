@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book List</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1816abf144.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="width: 48rem">
+      <h1 class="display-4 mb-4">Add Book</h1>
+      <div id="alert-box" class="d-none" role="alert"></div>
+      <label for="book-title" class="font-weight-bold">Book Title</label>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="book-title"
+          aria-describedby="basic-addon3"
+        />
+      </div>
+
+      <label for="author" class="font-weight-bold">Author</label>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="author"
+          aria-describedby="basic-addon3"
+        />
+      </div>
+
+      <label for="isbn" class="font-weight-bold">ISBN</label>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="isbn"
+          aria-describedby="basic-addon3"
+        />
+      </div>
+
+      <input
+        type="button"
+        id="submit-btn"
+        class="btn btn-outline-secondary mb-3"
+        value="Submit"
+      />
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">ISBN</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+          <!-- <tr>
+            <td>Book One</td>
+            <td>Can Aygün</td>
+            <td>12345</td>
+            <td>
+              <a href="#"><i class="far fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Book Two</td>
+            <td>John Doe</td>
+            <td>67890</td>
+            <td>
+              <a href="#"><i class="far fa-trash-alt"></i></a>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Main JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
