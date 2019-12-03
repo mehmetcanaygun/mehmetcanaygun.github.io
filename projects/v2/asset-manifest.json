@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e631d530.chunk.css",
+    "main.js": "/static/js/main.82476fcf.chunk.js",
+    "main.js.map": "/static/js/main.82476fcf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e7a5a08f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e7a5a08f.js.map",
+    "static/js/2.1dd6eee5.chunk.js": "/static/js/2.1dd6eee5.chunk.js",
+    "static/js/2.1dd6eee5.chunk.js.map": "/static/js/2.1dd6eee5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1aab1344dd090f1082b148ac530fca02.js": "/precache-manifest.1aab1344dd090f1082b148ac530fca02.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e631d530.chunk.css.map": "/static/css/main.e631d530.chunk.css.map",
+    "static/media/avatar.jpg": "/static/media/avatar.c57f366a.jpg",
+    "static/media/App.css": "/static/media/bg-contact.15959000.jpg",
+    "static/media/mca_cv_en.pdf": "/static/media/mca_cv_en.e15c9d88.pdf"
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agriculture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="page-title">Agricultural product production by region.</h1>
+
+  <div id="input-wrapper">
+    <select class="styleInput" id="selector">
+      <option style="color:#c2cb14;" value="corn">Corn</option>
+      <option style="color:#e81d1d;" value="cherry">Cherry</option>
+      <option style="color:#e139e9;" value="grape">Grape</option>
+      <option style="color:#e88326;" value="orange">Orange</option>
+      <option style="color:#49e422;" value="tea">Tea</option>
+    </select>
+
+    <input class="styleInput" type="button" id="showBtn" value="Show">
+  </div>
+
+  <div id="info-wrapper">
+    <div id="info1" class="info"></div>
+    <div id="info2" class="info"></div>
+    <div id="info3" class="info"></div>
+    <div id="info4" class="info"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div id="sqr101" class="hidden column"></div>
+      <div id="sqr102" class="column map corn1Arr"></div>
+      <div id="sqr103" class="column map corn1Arr"></div>
+      <div id="sqr104" class="hidden column"></div>
+      <div id="sqr105" class="hidden column"></div>
+      <div id="sqr106" class="hidden column"></div>
+      <div id="sqr107" class="hidden column"></div>
+      <div id="sqr108" class="hidden column"></div>
+      <div id="sqr109" class="column map cherry1Arr"></div>
+      <div id="sqr110" class="column map cherry1Arr"></div>
+      <div id="sqr111" class="column map corn1Arr cherry1Arr"></div>
+      <div id="sqr112" class="hidden column"></div>
+      <div id="sqr113" class="hidden column"></div>
+      <div id="sqr114" class="hidden column"></div>
+      <div id="sqr115" class="hidden column"></div>
+      <div id="sqr116" class="hidden column"></div>
+      <div id="sqr117" class="hidden column"></div>
+      <div id="sqr118" class="hidden column"></div>
+      <div id="sqr119" class="hidden column"></div>
+      <div id="sqr120" class="hidden column"></div>
+      <div id="sqr121" class="hidden column"></div>
+      <div id="sqr122" class="hidden column"></div>
+      <div id="sqr123" class="hidden column"></div>
+    </div>
+    <div class="row">
+      <div id="sqr201" class="column map corn1Arr grape1Arr"></div>
+      <div id="sqr202" class="column map cherry1Arr grape2Arr"></div>
+      <div id="sqr203" class="column map grape2Arr"></div>
+      <div id="sqr204" class="column map"></div>
+      <div id="sqr205" class="hidden column"></div>
+      <div id="sqr206" class="hidden column"></div>
+      <div id="sqr207" class="column map corn1Arr cherry1Arr"></div>
+      <div id="sqr208" class="column map corn1Arr cherry1Arr"></div>
+      <div id="sqr209" class="column map cherry1Arr"></div>
+      <div id="sqr210" class="column map cherry1Arr"></div>
+      <div id="sqr211" class="column map corn1Arr cherry1Arr"></div>
+      <div id="sqr212" class="column map corn2Arr cherry1Arr"></div>
+      <div id="sqr213" class="column map corn2Arr cherry1Arr tea1Arr"></div>
+      <div id="sqr214" class="column map corn1Arr tea1Arr"></div>
+      <div id="sqr215" class="hidden column"></div>
+      <div id="sqr216" class="hidden column"></div>
+      <div id="sqr217" class="hidden column"></div>
+      <div id="sqr218" class="hidden column"></div>
+      <div id="sqr219" class="column map cherry2Arr tea3Arr"></div>
+      <div id="sqr220" class="column map cherry2Arr tea2Arr"></div>
+      <div id="sqr221" class="column map tea2Arr"></div>
+      <div id="sqr222" class="column map"></div>
+      <div id="sqr223" class="hidden column"></div>
+    </div>
+    <div class="row">
+      <div id="sqr301" class="column map corn1Arr grape1Arr"></div>
+      <div id="sqr302" class="hidden column"></div>
+      <div id="sqr303" class="hidden column"></div>
+      <div id="sqr304" class="hidden column"></div>
+      <div id="sqr305" class="column map corn1Arr cherry2Arr"></div>
+      <div id="sqr306" class="column map corn3Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr307" class="column map corn1Arr cherry1Arr"></div>
+      <div id="sqr308" class="column map cherry1Arr"></div>
+      <div id="sqr309" class="column map cherry1Arr"></div>
+      <div id="sqr310" class="column map"></div>
+      <div id="sqr311" class="column map grape2Arr"></div>
+      <div id="sqr312" class="column map corn2Arr cherry2Arr"></div>
+      <div id="sqr313" class="column map corn2Arr cherry1Arr"></div>
+      <div id="sqr314" class="column map corn1Arr cherry1Arr tea1Arr"></div>
+      <div id="sqr315" class="column map corn1Arr cherry1Arr tea1Arr"></div>
+      <div id="sqr316" class="column map cherry1Arr tea2Arr"></div>
+      <div id="sqr317" class="column map corn1Arr cherry1Arr tea2Arr"></div>
+      <div id="sqr318" class="column map corn1Arr cherry1Arr tea3Arr"></div>
+      <div id="sqr319" class="column map tea3Arr"></div>
+      <div id="sqr320" class="column map tea2Arr"></div>
+      <div id="sqr321" class="column map"></div>
+      <div id="sqr322" class="column map"></div>
+      <div id="sqr323" class="hidden column"></div>
+    </div>
+    <div class="row">
+      <div id="sqr401" class="column map corn1Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr402" class="column map corn1Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr403" class="column map corn2Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr404" class="column map corn2Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr405" class="column map cherry2Arr grape1Arr"></div>
+      <div id="sqr406" class="column map corn2Arr cherry2Arr grape1Arr"></div>
+      <div id="sqr407" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr408" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr409" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr410" class="column map corn1Arr grape1Arr"></div>
+      <div id="sqr411" class="column map grape2Arr"></div>
+      <div id="sqr412" class="column map corn1Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr413" class="column map corn1Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr414" class="column map grape2Arr"></div>
+      <div id="sqr415" class="column map tea1Arr"></div>
+      <div id="sqr416" class="column map cherry1Arr"></div>
+      <div id="sqr417" class="column map cherry1Arr"></div>
+      <div id="sqr418" class="column map cherry1Arr"></div>
+      <div id="sqr419" class="column map"></div>
+      <div id="sqr420" class="column map"></div>
+      <div id="sqr421" class="column map"></div>
+      <div id="sqr422" class="column map corn1Arr"></div>
+      <div id="sqr423" class="column map corn1Arr"></div>
+    </div>
+    <div class="row">
+      <div id="sqr501" class="hidden column"></div>
+      <div id="sqr502" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr503" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr504" class="column map cherry2Arr"></div>
+      <div id="sqr505" class="column map cherry2Arr"></div>
+      <div id="sqr506" class="column map corn2Arr cherry2Arr"></div>
+      <div id="sqr507" class="column map corn2Arr cherry2Arr"></div>
+      <div id="sqr508" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr509" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr510" class="column map grape1Arr"></div>
+      <div id="sqr511" class="column map grape1Arr"></div>
+      <div id="sqr512" class="column map grape2Arr"></div>
+      <div id="sqr513" class="column map"></div>
+      <div id="sqr514" class="column map"></div>
+      <div id="sqr515" class="column map"></div>
+      <div id="sqr516" class="column map cherry1Arr"></div>
+      <div id="sqr517" class="column map cherry1Arr"></div>
+      <div id="sqr518" class="column map cherry1Arr"></div>
+      <div id="sqr519" class="column map"></div>
+      <div id="sqr520" class="column map"></div>
+      <div id="sqr521" class="column map"></div>
+      <div id="sqr522" class="column map"></div>
+      <div id="sqr523" class="column map"></div>
+    </div>
+    <div class="row">
+      <div id="sqr601" class="column map corn2Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr602" class="column map corn3Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr603" class="column map corn3Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr604" class="column map cherry2Arr grape3Arr"></div>
+      <div id="sqr605" class="column map cherry2Arr grape2Arr"></div>
+      <div id="sqr606" class="column map cherry3Arr grape1Arr"></div>
+      <div id="sqr607" class="column map cherry3Arr grape1Arr"></div>
+      <div id="sqr608" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr609" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr610" class="column map corn2Arr grape1Arr"></div>
+      <div id="sqr611" class="column map grape2Arr"></div>
+      <div id="sqr612" class="column map grape2Arr"></div>
+      <div id="sqr613" class="column map grape2Arr"></div>
+      <div id="sqr614" class="column map"></div>
+      <div id="sqr615" class="column map grape1Arr"></div>
+      <div id="sqr616" class="column map cherry1Arr grape1Arr"></div>
+      <div id="sqr617" class="column map cherry1Arr grape2Arr"></div>
+      <div id="sqr618" class="column map cherry1Arr grape2Arr"></div>
+      <div id="sqr619" class="column map"></div>
+      <div id="sqr620" class="column map"></div>
+      <div id="sqr621" class="column map"></div>
+      <div id="sqr622" class="column map"></div>
+      <div id="sqr623" class="column map"></div>
+    </div>
+    <div class="row">
+      <div id="sqr701" class="hidden column"></div>
+      <div id="sqr702" class="column map corn2Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr703" class="column map corn2Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr704" class="column map corn2Arr grape3Arr"></div>
+      <div id="sqr705" class="column map corn2Arr cherry3Arr grape3Arr"></div>
+      <div id="sqr706" class="column map cherry3Arr grape1Arr"></div>
+      <div id="sqr707" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr708" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr709" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr710" class="column map corn2Arr grape1Arr"></div>
+      <div id="sqr711" class="column map grape1Arr"></div>
+      <div id="sqr712" class="column map grape2Arr"></div>
+      <div id="sqr713" class="column map corn2Arr grape2Arr orange3Arr"></div>
+      <div id="sqr714" class="column map corn2Arr cherry3Arr grape3Arr orange1Arr"></div>
+      <div id="sqr715" class="column map grape2Arr"></div>
+      <div id="sqr716" class="column map grape2Arr"></div>
+      <div id="sqr717" class="column map corn2Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr718" class="column map corn2Arr grape2Arr"></div>
+      <div id="sqr719" class="column map corn2Arr grape2Arr"></div>
+      <div id="sqr720" class="column map corn1Arr grape2Arr"></div>
+      <div id="sqr721" class="column map corn1Arr grape1Arr"></div>
+      <div id="sqr722" class="column map grape1Arr"></div>
+      <div id="sqr723" class="column map grape1Arr"></div>
+    </div>
+    <div class="row">
+      <div id="sqr801" class="hidden column"></div>
+      <div id="sqr802" class="column map corn2Arr cherry2Arr grape2Arr orange1Arr"></div>
+      <div id="sqr803" class="column map corn2Arr cherry2Arr grape2Arr orange1Arr"></div>
+      <div id="sqr804" class="column map corn2Arr cherry2Arr grape3Arr"></div>
+      <div id="sqr805" class="column map cherry1Arr grape2Arr"></div>
+      <div id="sqr806" class="column map cherry3Arr grape2Arr"></div>
+      <div id="sqr807" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr808" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr809" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr810" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr811" class="column map cherry1Arr grape1Arr"></div>
+      <div id="sqr812" class="column map corn3Arr cherry1Arr grape2Arr orange3Arr"></div>
+      <div id="sqr813" class="column map corn2Arr cherry3Arr grape2Arr orange3Arr"></div>
+      <div id="sqr814" class="column map corn2Arr cherry3Arr grape3Arr orange1Arr"></div>
+      <div id="sqr815" class="column map corn1Arr grape2Arr"></div>
+      <div id="sqr816" class="column map corn1Arr grape2Arr"></div>
+      <div id="sqr817" class="column map corn3Arr grape2Arr"></div>
+      <div id="sqr818" class="column map corn3Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr819" class="column map corn3Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr820" class="column map corn1Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr821" class="column map corn1Arr grape1Arr"></div>
+      <div id="sqr822" class="hidden column"></div>
+      <div id="sqr823" class="hidden column"></div>
+    </div>
+    <div class="row">
+      <div id="sqr901" class="hidden column"></div>
+      <div id="sqr902" class="hidden column"></div>
+      <div id="sqr903" class="column map corn1Arr cherry1Arr grape1Arr orange2Arr"></div>
+      <div id="sqr904" class="column map corn1Arr cherry1Arr grape1Arr orange2Arr"></div>
+      <div id="sqr905" class="column map corn1Arr cherry3Arr grape2Arr orange2Arr"></div>
+      <div id="sqr906" class="column map corn1Arr cherry3Arr grape2Arr orange2Arr"></div>
+      <div id="sqr907" class="column map corn1Arr cherry3Arr grape2Arr orange2Arr"></div>
+      <div id="sqr908" class="column map corn3Arr cherry3Arr grape2Arr"></div>
+      <div id="sqr909" class="column map corn2Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr910" class="column map corn2Arr cherry2Arr grape3Arr"></div>
+      <div id="sqr911" class="column map corn2Arr cherry2Arr grape3Arr orange2Arr"></div>
+      <div id="sqr912" class="column map corn3Arr cherry1Arr grape2Arr orange3Arr"></div>
+      <div id="sqr913" class="column map corn2Arr cherry1Arr orange2Arr"></div>
+      <div id="sqr914" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr915" class="column map corn1Arr cherry2Arr grape2Arr"></div>
+      <div id="sqr916" class="column map corn3Arr grape2Arr"></div>
+      <div id="sqr917" class="column map corn3Arr grape2Arr"></div>
+      <div id="sqr918" class="column map corn3Arr cherry1Arr grape2Arr"></div>
+      <div id="sqr919" class="hidden column"></div>
+      <div id="sqr920" class="hidden column"></div>
+      <div id="sqr921" class="hidden column"></div>
+      <div id="sqr922" class="hidden column"></div>
+      <div id="sqr923" class="hidden column"></div>
+    </div>
+    <div class="row">
+      <div id="sqr1001" class="hidden column"></div>
+      <div id="sqr1002" class="hidden column"></div>
+      <div id="sqr1003" class="hidden column"></div>
+      <div id="sqr1004" class="hidden column"></div>
+      <div id="sqr1005" class="column map corn1Arr cherry3Arr grape2Arr orange2Arr"></div>
+      <div id="sqr1006" class="hidden column"></div>
+      <div id="sqr1007" class="hidden column"></div>
+      <div id="sqr1008" class="column map corn2Arr cherry3Arr grape2Arr orange2Arr"></div>
+      <div id="sqr1009" class="column map corn2Arr cherry2Arr grape3Arr orange2Arr"></div>
+      <div id="sqr1010" class="column map corn2Arr cherry2Arr grape3Arr orange2Arr"></div>
+      <div id="sqr1011" class="hidden column"></div>
+      <div id="sqr1012" class="hidden column"></div>
+      <div id="sqr1013" class="column map cherry2Arr grape2Arr orange2Arr"></div>
+      <div id="sqr1014" class="hidden column"></div>
+      <div id="sqr1015" class="hidden column"></div>
+      <div id="sqr1016" class="hidden column"></div>
+      <div id="sqr1017" class="hidden column"></div>
+      <div id="sqr1018" class="hidden column"></div>
+      <div id="sqr1019" class="hidden column"></div>
+      <div id="sqr1020" class="hidden column"></div>
+      <div id="sqr1021" class="hidden column"></div>
+      <div id="sqr1022" class="hidden column"></div>
+      <div id="sqr1023" class="hidden column"></div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

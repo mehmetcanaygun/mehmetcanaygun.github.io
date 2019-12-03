@@ -1,0 +1,171 @@
+body {
+  background-color: #000;
+}
+
+#input-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#info-wrapper {
+  display: none;
+}
+
+#page-title {
+  color: #fff;
+  font-family: Arial;
+}
+
+.styleInput {
+  width: 120px;
+  border-radius: 5px;
+  border: 2px solid #cfcfcf;
+  padding: 5px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+#showBtn {
+  background-color: #ad2424;
+  color: #fff;
+}
+
+#showBtn:hover {
+  background-color: #fff;
+  border-color: #ad2424;
+  color: #ad2424;
+  transition: 0.3s;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 855px;
+  transition: 0.4s;
+}
+
+.container:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+.row{
+  display: inline-block;
+}
+
+.column {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid gray; */
+  float: left;
+  margin-right: 5px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.column:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+
+.map {
+  background-color: #e4e4e4;
+}
+
+.info {
+  font-family: Arial;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 5px;
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  text-align: center;
+}
+
+.hidden:hover {
+  width: 30px;
+  transform: scale(1);
+  /* height: 30px; */
+  padding: 0;
+  background-color: #000;
+}
+
+.corn1 {
+  background-color: rgba(194, 203, 20, 0.3);
+}
+
+.corn2 {
+  background-color: rgba(194, 203, 20, 0.6);
+}
+
+.corn3 {
+  background-color: rgba(194, 203, 20, 0.9);
+}
+
+.cherry1 {
+  background-color: rgba(232, 29, 29, 0.3);
+}
+
+.cherry2 {
+  background-color: rgba(232, 29, 29, 0.6);
+}
+
+.cherry3 {
+  background-color: rgba(232, 29, 29, 0.9);
+}
+
+.grape1 {
+  background-color: rgba(225, 57, 233, 0.3);
+}
+
+.grape2 {
+  background-color: rgba(225, 57, 233, 0.6);
+}
+
+.grape3 {
+  background-color: rgba(225, 57, 233, 0.9);
+}
+
+.orange1 {
+  background-color: rgba(232, 131, 38, 0.3);
+}
+
+.orange2 {
+  background-color: rgba(232, 131, 38, 0.6);
+}
+
+.orange3 {
+  background-color: rgba(232, 131, 38, 0.9);
+}
+
+.tea1 {
+  background-color: rgba(73, 228, 34, 0.3);
+}
+
+.tea2 {
+  background-color: rgba(73, 228, 34, 0.6);
+}
+
+.tea3 {
+  background-color: rgba(73, 228, 34, 0.9);
+}
+
+@media only screen and (max-width: 890px) {
+
+  .container {
+    width: 327px;
+  }
+
+  .column {
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+  }
+}

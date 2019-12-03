@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task List</title>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/1816abf144.js"></script>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info">
+    <div class="card mx-auto mt-4 bg-light" style="width: 28rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task List</h5>
+        <label for="basic-url">New Task</label>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="new-task"
+            aria-describedby="basic-addon3"
+          />
+        </div>
+        <a
+          href="#"
+          id="add-task-btn"
+          class="btn btn-primary bg-success"
+          style="width: 8rem;"
+          >Add Task</a
+        >
+        <br />
+        <hr />
+        <h5>Tasks</h5>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="filter-tasks"
+            aria-describedby="basic-addon3"
+            placeholder="Filter Tasks"
+          />
+        </div>
+        <ul id="task-list-ul" class="list-group list-group-flush"></ul>
+        <a
+          href="#"
+          id="clear-tasks-btn"
+          class="btn btn-primary mt-3 bg-dark"
+          style="width: 8rem;"
+          >Clear Tasks</a
+        >
+      </div>
+    </div>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

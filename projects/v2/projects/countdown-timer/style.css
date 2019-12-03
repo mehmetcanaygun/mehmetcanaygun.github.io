@@ -1,0 +1,111 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  background: #2c5a79;
+  color: #fff;
+}
+
+.container {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  background: rgba(212, 228, 239, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(212, 228, 239, 1)),
+    color-stop(100%, rgba(134, 174, 204, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+  -webkit-box-shadow: 0px 5px 38px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 38px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 38px 6px rgba(0, 0, 0, 0.75);
+}
+
+.container h2 {
+  margin: 10px 0 40px 0;
+  color: #2e6f81;
+}
+
+.input-group {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cd-input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #000;
+}
+
+.btn {
+  width: 40%;
+  margin-top: 20px;
+  background: #2e6f81;
+  color: #fff;
+  border: 0;
+  -webkit-box-shadow: 0px 7px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 8px 1px rgba(0, 0, 0, 0.75);
+}
+
+.btn:hover {
+  background: #0d84a1;
+}
+
+#countdown-box {
+  width: 100%;
+  height: 15rem;
+  font-size: 4rem;
+  padding-top: 20px;
+  color: #000;
+}
+
+#countdown-box span {
+  color: #2e6f81;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+
+  #countdown-box {
+    font-size: 2rem;
+  }
+}

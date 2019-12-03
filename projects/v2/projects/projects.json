@@ -1,0 +1,129 @@
+{
+  "colors": [
+    "#FEC8D8",
+    "#5BC0BE",
+    "#EDE7B1",
+    "#E4C1F9",
+    "#D3F8E2",
+    "#DDCBEE",
+    "#F8B9D4",
+    "#FFF8BC",
+    "#FFE787",
+    "#FFAF92",
+    "#C4C4C4",
+    "#F2E9E0",
+    "#A64941"
+  ],
+  "projects": [
+    {
+      "name": "Rock Paper Scissors",
+      "demo": "../projects/rock-paper-scissors/index.html",
+      "github": "https://github.com/mehmetcanaygun/rock-paper-scissors"
+    },
+    {
+      "name": "Tic Tac Toe",
+      "demo": "../projects/tic-tac-toe/index.html",
+      "github": "https://github.com/mehmetcanaygun/tic-tac-toe"
+    },
+    {
+      "name": "Speed Type",
+      "demo": "../projects/speed-type/index.html",
+      "github": "https://github.com/mehmetcanaygun/speedtype"
+    },
+    {
+      "name": "Pomodoro Timer",
+      "demo": "../projects/pomodoro-timer/index.html",
+      "github": "https://github.com/mehmetcanaygun/pomodoro"
+    },
+    {
+      "name": "Reaction Tester",
+      "demo": "../projects/pomodoro-timer/index.html",
+      "github": "https://github.com/mehmetcanaygun/reaction_tester"
+    },
+    {
+      "name": "Movie List",
+      "demo": "../projects/movie-list/index.html",
+      "github": "https://github.com/mehmetcanaygun/html-movie-list"
+    },
+    {
+      "name": "Tip Calculator",
+      "demo": "../projects/tip-calculator/index.html",
+      "github": "https://github.com/mehmetcanaygun/tipcalculator"
+    },
+    {
+      "name": "Star Rating",
+      "demo": "../projects/star-rating/index.html",
+      "github": "https://github.com/mehmetcanaygun/star-rating"
+    },
+    {
+      "name": "JS Examples",
+      "demo": "../projects/js-examples/index.html",
+      "github": "https://github.com/mehmetcanaygun/js-examples"
+    },
+    {
+      "name": "Agriculture Map",
+      "demo": "../projects/agriculture-map/index.html",
+      "github": "https://github.com/mehmetcanaygun/agriculture-map"
+    },
+    {
+      "name": "Binary To Decimal",
+      "demo": "../projects/binary-to-decimal/index.html",
+      "github": "https://github.com/mehmetcanaygun/binary_to_decimal"
+    },
+    {
+      "name": "Border Radius",
+      "demo": "../projects/border-radius-preview/index.html",
+      "github": "https://github.com/mehmetcanaygun/border-radius-preview"
+    },
+    {
+      "name": "Christmas Lights",
+      "demo": "../projects/christmas-lights/index.html",
+      "github": "https://github.com/mehmetcanaygun/christmas-lights"
+    },
+    {
+      "name": "Contact List",
+      "demo": "../projects/contact-list/index.html",
+      "github": "https://github.com/mehmetcanaygun/contact-list"
+    },
+    {
+      "name": "Color Cycle",
+      "demo": "../projects/color-cycle/index.html",
+      "github": "https://github.com/mehmetcanaygun/color-cycle"
+    },
+    {
+      "name": "Countdown Timer",
+      "demo": "../projects/countdown-timer/index.html",
+      "github": "https://github.com/mehmetcanaygun/countdown-timer"
+    },
+    {
+      "name": "JSON To CSV",
+      "demo": "../projects/json-to-csv/index.html",
+      "github": "https://github.com/mehmetcanaygun/json-to-csv"
+    },
+    {
+      "name": "CSV To JSON",
+      "demo": "../projects/csv-to-json/index.html",
+      "github": "https://github.com/mehmetcanaygun/csv-to-json"
+    },
+    {
+      "name": "Task List",
+      "demo": "../projects/task-list/index.html",
+      "github": "https://github.com/mehmetcanaygun/task-list"
+    },
+    {
+      "name": "Book List",
+      "demo": "../projects/book-list/index.html",
+      "github": "https://github.com/mehmetcanaygun/book-list"
+    },
+    {
+      "name": "Word Frequency",
+      "demo": "../projects/word-frequency/index.html",
+      "github": "https://github.com/mehmetcanaygun/word-frequency"
+    },
+    {
+      "name": "Notes App",
+      "demo": "../projects/notes-app/index.html",
+      "github": "https://github.com/mehmetcanaygun/notes-app"
+    }
+  ]
+}
