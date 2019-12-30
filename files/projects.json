@@ -1,0 +1,107 @@
+[
+  {
+    "name": "QuizApp",
+    "url": "https://quizapp251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun/react-quiz-app"
+  },
+  {
+    "name": "RecipeApp",
+    "url": "https://recipeapp251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun/react-recipe-app"
+  },
+  {
+    "name": "Movie List (Mobile)",
+    "url": "https://movielist251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun/react-movie-list"
+  },
+  {
+    "name": "Notes App",
+    "url": "./files/projects/notes-app/index.html",
+    "github": "https://github.com/mehmetcanaygun/notes-app"
+  },
+  {
+    "name": "Word Frequency",
+    "url": "./files/projects/word-frequency/index.html",
+    "github": "https://github.com/mehmetcanaygun/word-frequency"
+  },
+  {
+    "name": "Book List",
+    "url": "./files/projects/book-list/index.html",
+    "github": "https://github.com/mehmetcanaygun/book-list"
+  },
+  {
+    "name": "Task List",
+    "url": "./files/projects/task-list/index.html",
+    "github": "https://github.com/mehmetcanaygun/task-list"
+  },
+  {
+    "name": "CSV To JSON",
+    "url": "./files/projects/csv-to-json/index.html",
+    "github": "https://github.com/mehmetcanaygun/csv-to-json"
+  },
+  {
+    "name": "JSON To CSV",
+    "url": "./files/projects/json-to-csv/index.html",
+    "github": "https://github.com/mehmetcanaygun/json-to-csv"
+  },
+  {
+    "name": "Countdown Timer",
+    "url": "./files/projects/countdown-timer/index.html",
+    "github": "https://github.com/mehmetcanaygun/countdown-timer"
+  },
+  {
+    "name": "Color Cycle",
+    "url": "./files/projects/color-cycle/index.html",
+    "github": "https://github.com/mehmetcanaygun/color-cycle"
+  },
+  {
+    "name": "Christmas Lights",
+    "url": "./files/projects/christmas-lights/index.html",
+    "github": "https://github.com/mehmetcanaygun/christmas-lights"
+  },
+  {
+    "name": "Border Radius Preview",
+    "url": "./files/projects/border-radius-preview/index.html",
+    "github": "https://github.com/mehmetcanaygun/border-radius-preview"
+  },
+  {
+    "name": "Binary To Decimal",
+    "url": "./files/projects/binary-to-decimal/index.html",
+    "github": "https://github.com/mehmetcanaygun/binary_to_decimal"
+  },
+  {
+    "name": "Agriculture Map",
+    "url": "./files/projects/agriculture-map/index.html",
+    "github": "https://github.com/mehmetcanaygun/agriculture-map"
+  },
+  {
+    "name": "Tip Calculator",
+    "url": "./files/projects/tip-calculator/index.html",
+    "github": "https://github.com/mehmetcanaygun/tipcalculator"
+  },
+  {
+    "name": "Reaction Tester",
+    "url": "./files/projects/reaction-tester/index.html",
+    "github": "https://github.com/mehmetcanaygun/reaction_tester"
+  },
+  {
+    "name": "Pomodoro Timer",
+    "url": "./files/projects/pomodoro-timer/index.html",
+    "github": "https://github.com/mehmetcanaygun/pomodoro"
+  },
+  {
+    "name": "Speed Type",
+    "url": "./files/projects/speed-type/index.html",
+    "github": "https://github.com/mehmetcanaygun/speedtype"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "url": "./files/projects/tic-tac-toe/index.html",
+    "github": "https://github.com/mehmetcanaygun/tic-tac-toe"
+  },
+  {
+    "name": "Rock Paper Scissors",
+    "url": "./files/projects/rock-paper-scissors/index.html",
+    "github": "https://github.com/mehmetcanaygun/rock-paper-scissors"
+  }
+]
