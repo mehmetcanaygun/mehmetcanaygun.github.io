@@ -1,5 +1,10 @@
-[
+[  
 	{
+    "name": "Cafe Website",
+    "url": "https://cafewebsite251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun"
+  },
+  {
     "name": "Book Finder",
     "url": "https://bookfinder251125.netlify.com/",
     "github": "https://github.com/mehmetcanaygun/react-book-finder"
