@@ -1,4 +1,9 @@
 [  
+	{
+    "name": "Blog",
+    "url": "https://blog251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun/blog"
+  },
   {
     "name": "FlipCard",
     "url": "https://flipcard251125.netlify.com/",
