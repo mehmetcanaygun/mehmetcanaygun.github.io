@@ -1,5 +1,10 @@
 [  
 	{
+    "name": "Photographer Website",
+    "url": "https://photographerwebsite251125.netlify.com/",
+    "github": "https://github.com/mehmetcanaygun/photographer-website"
+  },
+	{
     "name": "Calendar",
     "url": "https://mycalendar251125.netlify.com/",
     "github": "https://github.com/mehmetcanaygun/calendar"
