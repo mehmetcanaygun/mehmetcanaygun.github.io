@@ -40,6 +40,28 @@ body {
   align-items: center;
 }
 
+/* Custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--col-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--col-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--col-red);
+}
+
 .container {
   text-align: center;
 }
