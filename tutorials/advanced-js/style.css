@@ -196,6 +196,10 @@ button:focus {
     width: 100%;
   }
 
+  .container {
+  padding: 5px;
+}
+
   .list li {
     border-left: 0;
     border-bottom: 1px solid indianred;
