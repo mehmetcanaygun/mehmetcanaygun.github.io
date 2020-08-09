@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1816abf144.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Advanced JS</title>
+  </head>
+  <body>
+    <div id="code-container" class="code-container">
+      <button id="close-btn" class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="code" src="" alt="code" />
+    </div>
+
+    <div class="container">
+      <div class="title-and-filter">
+        <h1 class="title">
+          Advanced JavaScript Tutorials
+          <a
+            href="https://www.youtube.com/channel/UCbGZKLIHpox2l0whz6_RYyg"
+            target="_blank"
+            >by techsith</a
+          >
+        </h1>
+
+        <input
+          type="text"
+          id="filter-input"
+          class="filter-input"
+          placeholder="Filter Tutorials"
+        />
+      </div>
+
+      <ul class="list">
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=s6SH72uAn3Q&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=1"
+            target="_blank"
+            >Promise</a
+          >
+          <button class="code-btn" onclick="getCode('promise')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=71AtaJpJHw0&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=2"
+            target="_blank"
+            >Closure</a
+          >
+          <button class="code-btn" onclick="getCode('closure')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=-xqJo5VRP4A&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=8"
+            target="_blank"
+            >Closure 2</a
+          >
+          <button class="code-btn" onclick="getCode('closure2')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=pTbSfCT42_M&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=4"
+            target="_blank"
+            >Callback Functions</a
+          >
+          <button class="code-btn" onclick="getCode('callbackFunctions')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=xizFJHKHdHw&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=5"
+            target="_blank"
+            >Object Creation Patterns</a
+          >
+          <button class="code-btn" onclick="getCode('objectCreationPatterns')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=c0mLRpw-9rI&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=6"
+            target="_blank"
+            >Call, Apply and Bind</a
+          >
+          <button class="code-btn" onclick="getCode('callApplyBind')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=AYVYxezrMWA&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=22"
+            target="_blank"
+            >Practical Applications of Call, Apply and Bind</a
+          >
+          <button
+            class="code-btn"
+            onclick="getCode('applicationsOfCallApplyBind')"
+          >
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=y-Bfgellcog&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=49"
+            target="_blank"
+            >Array Methods 1 - flat, flatMap, reduceRight, copyWithin</a
+          >
+          <button class="code-btn" onclick="getCode('arrayMethods1')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=zVMkR-IrBJI&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=43"
+            target="_blank"
+            >Array Methods 2 - from</a
+          >
+          <button class="code-btn" onclick="getCode('arrayMethods2')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=pFEdFfB2ewE&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=57"
+            target="_blank"
+            >Negative Index & Array Performance</a
+          >
+          <button
+            class="code-btn"
+            onclick="getCode('negIndexAndArrayPerformance')"
+          >
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=7oNWNlMrkpc&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=9"
+            target="_blank"
+            >Prototype Inheritance 1 - OOP in JS 1</a
+          >
+          <button class="code-btn" onclick="getCode('prototypeInheritance')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=uIlj6_z_wL8&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=17"
+            target="_blank"
+            >Prototype Inheritance 2 - OOP in JS 2</a
+          >
+          <button class="code-btn" onclick="getCode('prototypeInheritance2')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=MACDGu96wrA&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=33"
+            target="_blank"
+            >Object.create Method - OOP in JS 3</a
+          >
+          <button class="code-btn" onclick="getCode('objectCreateMethod')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=s7-cWUvaTDk&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=38"
+            target="_blank"
+            >Prototype Chain - OOP in JS 4</a
+          >
+          <button class="code-btn" onclick="getCode('prototypeChain')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=ruSFKRdJ1R0&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=50"
+            target="_blank"
+            >Extending Constructors - OOP in JS 5</a
+          >
+          <button class="code-btn" onclick="getCode('extendingConstructors')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=mX7uWf9BL8A&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=51"
+            target="_blank"
+            >Object.setPrototypeOf Method - OOP in JS 6</a
+          >
+          <button
+            class="code-btn"
+            onclick="getCode('objectSetPrototypeOfMethod')"
+          >
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=9Ky4X6inpi4&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=45"
+            target="_blank"
+            >Object.assign Method - OOP in JS 7</a
+          >
+          <button class="code-btn" onclick="getCode('objectAssignMethod')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=DpGuDFK4xss&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=41"
+            target="_blank"
+            >Mixins in JavaScript - OOP in JS 8</a
+          >
+          <button class="code-btn" onclick="getCode('mixins')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=VL6WDtky-to&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=48"
+            target="_blank"
+            >Classes - OOP in JS 9</a
+          >
+          <button class="code-btn" onclick="getCode('classes')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=riGeBumHIlE&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=52"
+            target="_blank"
+            >Subclasses - OOP in JS 10</a
+          >
+          <button class="code-btn" onclick="getCode('subclasses')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=10b6K9fORI4&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=46"
+            target="_blank"
+            >Static Methods - OOP in JS 11</a
+          >
+          <button class="code-btn" onclick="getCode('staticMethods')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=NV9sHLX-jZU&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=10"
+            target="_blank"
+            >"this" keyword</a
+          >
+          <button class="code-btn" onclick="getCode('thisKeyword')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=DpFDj-6iYoY&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=11"
+            target="_blank"
+            >Understanding Objects</a
+          >
+          <button class="code-btn" onclick="getCode('objects')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=IGoAdn-e5II&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=12"
+            target="_blank"
+            >Async - Await</a
+          >
+          <button class="code-btn" onclick="getCode('asyncAwait')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=_pfXEv9cFGE&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=13"
+            target="_blank"
+            >Arrow Functions</a
+          >
+          <button class="code-btn" onclick="getCode('arrowFunctions')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=_pfXEv9cFGE&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=13"
+            target="_blank"
+            >Event Bubbling and Capturing</a
+          >
+          <button class="code-btn" onclick="getCode('eventBubblingCapturing')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+          <a
+            href="eventBubblingCapturing.html"
+            target="_blank"
+            class="page-btn"
+          >
+            <i class="far fa-file-code"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=f5wGZiYVfjk&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=16"
+            target="_blank"
+            >Constructors</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=5rwuKH-zdos&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=18"
+            target="_blank"
+            >Method Chaining</a
+          >
+          <button class="code-btn" onclick="getCode('methodChaining')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=oU3LzOO0OGA&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=19"
+            target="_blank"
+            >Currying</a
+          >
+          <button class="code-btn" onclick="getCode('currying')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=7tGmS2SPxBo&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=20"
+            target="_blank"
+            >Hoisting</a
+          >
+          <button class="code-btn" onclick="getCode('hoisting')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=eY7u388cvM4&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=21"
+            target="_blank"
+            >Immediately Invoked Function</a
+          >
+          <button
+            class="code-btn"
+            onclick="getCode('immediatelyInvokedFunction')"
+          >
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=VtG0WAUvq2w&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=24"
+            target="_blank"
+            >Recursion</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="youtube.com/watch?v=kGl0B9tqrlg&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=25"
+            target="_blank"
+            >Spread Operator</a
+          >
+          <button class="code-btn" onclick="getCode('spreadOperator')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=ZNrJPzjNt-o&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=28"
+            target="_blank"
+            >Iterators</a
+          >
+          <button class="code-btn" onclick="getCode('iterators')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=TJpkYvSREtM&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=26"
+            target="_blank"
+            >Generators</a
+          >
+          <button class="code-btn" onclick="getCode('generators')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=-bS6u_oQFtc&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=29"
+            target="_blank"
+            >Debugging</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=sXV_31fwetY&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=32"
+            target="_blank"
+            >Maps & Weak Maps</a
+          >
+          <button class="code-btn" onclick="getCode('mapsWeakMaps')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=SjK9qU6oRVo&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=55"
+            target="_blank"
+            >Sets & Weak Sets</a
+          >
+          <button class="code-btn" onclick="getCode('setsWeakSets')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=_8wOde1fmEM&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=34"
+            target="_blank"
+            >Decorators</a
+          >
+          <button class="code-btn" onclick="getCode('decorators')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=TbCgGWe8LN8&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=35"
+            target="_blank"
+            >setTimeout & setInterval</a
+          >
+          <button class="code-btn" onclick="getCode('setTimeoutSetInterval')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=E-dAnFdq8k8&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=36"
+            target="_blank"
+            >Pass By Value & Pass By Reference</a
+          >
+          <button class="code-btn" onclick="getCode('passByValueReference')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=uCcxKp_HbKk&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=37"
+            target="_blank"
+            >Template Strings and String Functions</a
+          >
+          <button class="code-btn" onclick="getCode('stringFunctions')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=rPNGB0ZLvdw&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=39"
+            target="_blank"
+            >Regular Expressions</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=pMK-jcOAYI8&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=14"
+            target="_blank"
+            >Web Workers</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=HqIkddLfCAk&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=42"
+            target="_blank"
+            >JavaScript Modules</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=I5AGSH8ROSU&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=40"
+            target="_blank"
+            >Applications Of Spread Operator</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=gflV5llbsL0&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=31"
+            target="_blank"
+            >How To Master JavaScript Step By Step</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=0_5Nns9YgjQ&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=56"
+            target="_blank"
+            >Default Parameters</a
+          >
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=j9xuvChJftg&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=53"
+            target="_blank"
+            >Type Conversions</a
+          >
+          <button class="code-btn" onclick="getCode('typeConversions')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=oxoFVqetl1E&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=3"
+            target="_blank"
+            >Interview Questions 1</a
+          >
+          <button class="code-btn" onclick="getCode('interviewQuestions1')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=yo3MJPcVJc8&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=7"
+            target="_blank"
+            >Interview Questions 2</a
+          >
+          <button class="code-btn" onclick="getCode('interviewQuestions2')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=B1P3GFa7jVc&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=54"
+            target="_blank"
+            >Debounce</a
+          >
+          <button class="code-btn" onclick="getCode('debounce')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+          <a href="debounce.html" target="_blank" class="page-btn">
+            <i class="far fa-file-code"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=9NPPsP-4LBg&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=58"
+            target="_blank"
+            >Throttling</a
+          >
+          <button class="code-btn" onclick="getCode('throttling')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+          <a href="throttling.html" target="_blank" class="page-btn">
+            <i class="far fa-file-code"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="youtube.com/watch?v=x7guiscwu0U&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=59"
+            target="_blank"
+            >Bitwise Operators</a
+          >
+          <button class="code-btn" onclick="getCode('bitwiseOperators')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+        <li>
+          <a
+            class="tutorial-link"
+            href="https://www.youtube.com/watch?v=3oefKzjCU4w&list=PL7pEw9n3GkoW5bYOhVAtmJlak3ZK7SaDf&index=23"
+            target="_blank"
+            >ES2020 New Features</a
+          >
+          <button class="code-btn" onclick="getCode('es2020')">
+            <i class="fas fa-code"></i> <span>Code</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Promise -->
+    <!-- <script src="js/promise.js"></script> -->
+    <!-- Closure -->
+    <!-- <script src="js/closure.js"></script> -->
+    <!-- Closure 2 -->
+    <!-- <script src="js/closure2.js"></script> -->
+    <!-- Callback Functions -->
+    <!-- <script src="js/callbackFunctions.js"></script> -->
+    <!-- Object Creation Patterns -->
+    <!-- <script src="js/objectCreationPatterns.js"></script> -->
+    <!-- Call, Apply and Bind -->
+    <!-- <script src="js/callApplyBind.js"></script> -->
+    <!-- Practical Applications of Call, Apply and Bind -->
+    <!-- <script src="js/applicationsOfCallApplyBind.js"></script> -->
+    <!-- Array Methods 1 - flat, flatMap, reduceRight, copyWithin -->
+    <!-- <script src="js/arrayMethods1.js"></script> -->
+    <!-- Array Methods 2 - from -->
+    <!-- <script src="js/arrayMethods2.js"></script> -->
+    <!-- Arrays With Negative Index & Array Performance -->
+    <!-- <script src="js/negIndexAndArrayPerformance.js"></script> -->
+    <!-- Prototype Inheritance -->
+    <!-- <script src="js/prototypeInheritance.js"></script> -->
+    <!-- Prototype Inheritance -->
+    <!-- <script src="js/prototypeInheritance2.js"></script> -->
+    <!-- This Keyword -->
+    <!-- <script src="js/thisKeyword.js"></script> -->
+    <!-- Understanding Objects 1 -->
+    <!-- <script src="js/objects.js"></script> -->
+    <!-- Async - Await -->
+    <!-- <script src="js/asyncAwait.js"></script> -->
+    <!-- Arrow Function -->
+    <!-- <script src="js/arrowFunctions.js"></script> -->
+    <!-- Event Bubbling and Capturing -->
+    <!-- <script src="js/eventBubblingCapturing.js"></script> -->
+    <!-- Method Chaining -->
+    <!-- <script src="js/methodChaining.js"></script> -->
+    <!-- Currying -->
+    <!-- <script src="js/currying.js"></script> -->
+    <!-- Hoisting -->
+    <!-- <script src="js/hoisting.js"></script> -->
+    <!-- Immediately Invoked Function -->
+    <!-- <script src="js/immediatelyInvokedFunction.js"></script> -->
+    <!-- Spread Operator -->
+    <!-- <script src="js/spreadOperator.js"></script> -->
+    <!-- Iterators -->
+    <!-- <script src="js/iterators.js"></script> -->
+    <!-- Generators -->
+    <!-- <script src="js/generators.js"></script> -->
+    <!-- Maps & Weak Maps -->
+    <!-- <script src="js/mapsWeakMaps.js"></script> -->
+    <!-- Sets & Weak Sets -->
+    <!-- <script src="js/setsWeakSets.js"></script> -->
+    <!-- Object.create Method -->
+    <!-- <script src="js/objectCreateMethod.js"></script> -->
+    <!-- Decorators -->
+    <!-- <script src="js/decorators.js"></script> -->
+    <!-- setTimeout & setInterval -->
+    <!-- <script src="js/setTimeoutSetInterval.js"></script> -->
+    <!-- Pass By Value & Pass By Reference -->
+    <!-- <script src="js/passByValueReference.js"></script> -->
+    <!-- Template String and String Functions -->
+    <!-- <script src="js/stringFunctions.js"></script> -->
+    <!-- Prototype Chain -->
+    <!-- <script src="js/prototypeChain.js"></script> -->
+    <!-- Extending Constructors -->
+    <!-- <script src="js/extendingConstructors.js"></script> -->
+    <!-- Object.setPrototypeOf Method.js -->
+    <!-- <script src="js/objectSetPrototypeOfMethod.js"></script> -->
+    <!-- object.assign Method -->
+    <!-- <script src="js/objectAssign.js"></script> -->
+    <!-- Mixins -->
+    <!-- <script src="js/mixins.js"></script> -->
+    <!-- Classes -->
+    <!-- <script src="js/classes.js"></script> -->
+    <!-- Subclasses -->
+    <!-- <script src="js/subclasses.js"></script> -->
+    <!-- Static Methods -->
+    <!-- <script src="js/staticMethods.js"></script> -->
+    <!-- Type Conversions -->
+    <!-- <script src="js/typeConversions.js"></script> -->
+    <!-- Interview Questions 1 -->
+    <!-- <script src="js/interviewQuestions1.js"></script> -->
+    <!-- Interview Questions 2 -->
+    <!-- <script src="js/interviewQuestions2.js"></script> -->
+    <!-- Bitwise Operators -->
+    <!-- <script src="js/bitwiseOperators.js"></script> -->
+    <!-- ES2020 New Features -->
+    <!-- <script src="js/es2020.js"></script> -->
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

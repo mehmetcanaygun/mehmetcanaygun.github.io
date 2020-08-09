@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23cd5c5c' fill-opacity='0.1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.code-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.code-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.code-container .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  background: none;
+  border: 0;
+  color: #fff;
+}
+
+.code-container .close-btn:hover {
+  color: indianred;
+}
+
+.code-container img {
+  width: 600px;
+}
+
+.container {
+  width: 100%;
+  padding: 40px;
+}
+
+.title {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: indianred;
+}
+
+.title a {
+  text-decoration: none;
+  color: indianred;
+  font-size: 1.2rem;
+}
+
+.filter-input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  border: 0;
+  border-bottom: 2px solid indianred;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  font-size: 1.2rem;
+  padding: 10px 0 10px 30px;
+  border-left: 5px solid indianred;
+  margin-bottom: 10px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* .list li:hover {
+  border-left: 10px solid indianred;
+} */
+
+.list li a:hover {
+  color: indianred;
+}
+
+.code-btn {
+  width: 50px;
+  height: 30px;
+  padding: 4px;
+  margin-left: 30px;
+  border: 0;
+  background: whitesmoke;
+  color: indianred;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.code-btn i,
+.code-btn span {
+  transition: transform 0.3s ease-in-out;
+}
+
+.code-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(30px);
+}
+
+.code-btn:hover i {
+  transform: translateY(-30px);
+}
+
+.code-btn:hover span {
+  transform: translateY(0);
+}
+
+.page-btn {
+  width: 50px;
+  height: 30px;
+  padding: 4px;
+  margin-left: 10px;
+  border: 0;
+  background: whitesmoke;
+  color: indianred;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.page-container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .code-container img {
+    width: 100%;
+  }
+
+  .list li {
+    border-left: 0;
+    border-bottom: 1px solid indianred;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .code-btn {
+    width: 50px;
+    margin-left: auto;
+  }
+}

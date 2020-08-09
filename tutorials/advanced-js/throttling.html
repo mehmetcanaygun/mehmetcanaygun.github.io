@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #myBtn {
+        width: 120px;
+        height: 40px;
+        background-color: #3c922b;
+        border: 0;
+        cursor: pointer;
+      }
+
+      #myBtn:active {
+        transform: scale(1.1);
+      }
+    </style>
+    <title>Throttling</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h2 class="title">Throttling</h2>
+
+      <button id="myBtn">Click Me</button>
+    </div>
+
+    <!-- Debounce -->
+    <script src="js/throttling.js"></script>
+  </body>
+</html>
