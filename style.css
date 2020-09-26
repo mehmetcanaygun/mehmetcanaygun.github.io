@@ -132,6 +132,21 @@ body {
   background-image: linear-gradient(var(--col-email), var(--col-email-2));
 }
 
+.contact-card .cv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-card .cv-container .cv {
+  width: 100%;
+}
+
+.contact-card .sm.cv:hover {
+  background-image: linear-gradient(var(--col-1), var(--col-2));
+}
+
 .contact-card .sm i {
   font-size: 2.5rem;
   color: var(--col-red);
