@@ -1,161 +1,288 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Sirin+Stencil&display=swap");
 
 :root {
-  --col-dark: #222222;
-  --col-light: #ebe9e9;
-  --col-light-2: #fff1d0;
-  --col-1: #6d2ba6;
-  --col-2: #2c2c54;
-  --col-red: #a40e27;
-  --col-github: #24292e;
-  --col-github-2: #272a2e;
-  --col-linkedin: #0093bc;
-  --col-linkedin-2: #22a5c9;
-  --col-twitter: #1a91da;
-  --col-twitter-2: #41aef1;
-  --col-instagram-1: #ae33a7;
-  --col-instagram-2: #e12f79;
-  --col-instagram-3: #f88942;
-  --col-email: #d32e2a;
-  --col-email-2: #df4644;
+  --color-dark: #333;
+  --color-darker: #161616;
+  --color-primary: #7a2589;
+  --color-secondary: #eaeaea;
+  --color-gray: #979797;
+  --font-display: "Sirin Stencil", cursive;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comfortaa", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  margin-bottom: 60px;
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.title span {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  padding: 20px 10%;
-  background-color: var(--col-dark);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.07'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  color: var(--col-light-2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 5%;
+  background-color: var(--color-dark);
 }
 
-/* Custom scrollbar */
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--col-light);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: var(--col-dark);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--col-red);
-}
-
-.container {
-  text-align: center;
-}
-
-.title {
-  font-family: "Parisienne", cursive;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.bio {
-  margin-bottom: 20px;
+.contact-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  margin-bottom: 80px;
 }
 
 .contact-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.contact-card .sm {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-  background-color: var(--col-light);
-  transition: background-color 0.3s;
-}
-
-.contact-card .sm:hover {
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.75);
-}
-
-.contact-card .sm:hover i,
-.contact-card .sm:hover span {
-  color: var(--col-light);
-}
-
-.contact-card .sm:hover i {
-  transform-origin: center;
-  transform: rotate(10deg);
-}
-
-.contact-card .sm.portfolio:hover {
-  background-image: linear-gradient(var(--col-1), var(--col-2));
-}
-.contact-card .sm.github:hover {
-  background-image: linear-gradient(var(--col-github), var(--col-github-2));
-}
-.contact-card .sm.linkedin:hover {
-  background-image: linear-gradient(var(--col-linkedin), var(--col-linkedin-2));
-}
-.contact-card .sm.twitter:hover {
-  background-image: linear-gradient(var(--col-twitter), var(--col-twitter-2));
-}
-.contact-card .sm.instagram:hover {
-  background-image: linear-gradient(
-    var(--col-instagram-1),
-    var(--col-instagram-2),
-    var(--col-instagram-3)
-  );
-}
-.contact-card .sm.email:hover {
-  background-image: linear-gradient(var(--col-email), var(--col-email-2));
-}
-
-.contact-card .cv-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
-
-.contact-card .cv-container .cv {
   width: 100%;
+  height: 80px;
+  border-radius: 50px;
+  padding: 0 8px;
+  margin-bottom: 16px;
+  background-color: var(--color-darker);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact-card .sm.cv:hover {
-  background-image: linear-gradient(var(--col-1), var(--col-2));
+.contact-card span {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 16px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-secondary);
+  background-color: var(--color-dark);
+  transition: 0.2s ease-in;
 }
 
-.contact-card .sm i {
-  font-size: 2.5rem;
-  color: var(--col-red);
-  margin-right: 20px;
-  transition: 0.3s;
+.contact-card span img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.contact-card .sm span {
-  color: var(--col-dark);
-  font-weight: bold;
-  transition: 0.3s;
+.contact-card a {
+  position: relative;
+  z-index: 2;
+  color: var(--color-gray);
+  font-size: 18px;
+  transition: 0.2s ease-in;
+  text-decoration: none;
+}
+
+.contact-card::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  width: 0;
+  height: 0;
+  transform: rotate(30deg);
+  -webkit-box-shadow: -2px 0px 10px 0px #000;
+  -moz-box-shadow: -2px 0px 10px 0px #000;
+  box-shadow: -2px 0px 10px 0px #000;
+  transition: 0.2s ease-out;
+}
+
+.contact-card.website:hover::after,
+.contact-card.github:hover::after,
+.contact-card.linkedin:hover::after,
+.contact-card.twitter:hover::after,
+.contact-card.instagram:hover::after,
+.contact-card.facebook:hover::after,
+.contact-card.gmail:hover::after {
+  width: 200px;
+  height: 200px;
+}
+
+.contact-card.website:hover::after {
+  background-color: var(--color-primary);
+}
+.contact-card.github:hover::after {
+  background-color: #24292e;
+}
+.contact-card.linkedin:hover::after {
+  background-color: #0a66c2;
+}
+.contact-card.twitter:hover::after {
+  background-color: #1da1f2;
+}
+.contact-card.instagram:hover::after {
+  background-color: #cb4270;
+}
+.contact-card.facebook:hover::after {
+  background-color: #3776c9;
+}
+.contact-card.gmail:hover::after {
+  background-color: #c5221f;
+}
+
+.contact-card:hover span {
+  margin-right: 24px;
+}
+
+.contact-card:hover a {
+  color: var(--color-secondary);
+}
+
+.contact-card.website:hover span {
+  background-color: var(--color-primary);
+}
+
+.contact-card.github:hover span {
+  background-color: #24292e;
+}
+
+.contact-card.linkedin:hover span {
+  background-color: #0a66c2;
+}
+
+.contact-card.twitter:hover span {
+  background-color: #1da1f2;
+}
+
+.contact-card.instagram:hover span {
+  background-color: #cb4270;
+}
+
+.contact-card.facebook:hover span {
+  background-color: #3776c9;
+}
+
+.contact-card.gmail:hover span {
+  background-color: #c5221f;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .contact-cards-container {
+    column-gap: 10px;
+  }
+
+  .contact-card.gmail a {
+    font-size: 14px;
+  }
+
+  .contact-card:hover span {
+    margin-right: 20px;
+  }
+}
+
+/* Animations */
+@keyframes contactCard {
+  0%,
+  100% {
+    width: 180px;
+    height: 180px;
+  }
+  50% {
+    width: 170px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cards-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-card {
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
+  .contact-card span {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .contact-card span img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .contact-card a {
+    font-size: 14px;
+    color: var(--color-secondary);
+  }
+
+  .contact-card.website span {
+    background-color: var(--color-primary);
+  }
+
+  .contact-card.github span {
+    background-color: #24292e;
+  }
+
+  .contact-card.linkedin span {
+    background-color: #0a66c2;
+  }
+
+  .contact-card.twitter span {
+    background-color: #1da1f2;
+  }
+
+  .contact-card.instagram span {
+    background-color: #cb4270;
+  }
+
+  .contact-card.facebook span {
+    background-color: #3776c9;
+  }
+
+  .contact-card.gmail span {
+    background-color: #c5221f;
+  }
+
+  .contact-card::after,
+  .contact-card.website:hover::after,
+  .contact-card.github:hover::after,
+  .contact-card.linkedin:hover::after,
+  .contact-card.twitter:hover::after,
+  .contact-card.instagram:hover::after,
+  .contact-card.facebook:hover::after,
+  .contact-card.gmail:hover::after {
+    width: 180px;
+    height: 180px;
+    animation: contactCard 1s infinite;
+  }
+
+  .contact-card.website::after {
+    background-color: var(--color-primary);
+  }
+  .contact-card.github::after {
+    background-color: #24292e;
+  }
+  .contact-card.linkedin::after {
+    background-color: #0a66c2;
+  }
+  .contact-card.twitter::after {
+    background-color: #1da1f2;
+  }
+  .contact-card.instagram::after {
+    background-color: #cb4270;
+  }
+  .contact-card.facebook::after {
+    background-color: #3776c9;
+  }
+  .contact-card.gmail::after {
+    background-color: #c5221f;
+  }
 }
